@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class TicTacToeInput {
+
+    public static void main(String[] args) {
+
+        int slot = getUserSlot();
+        System.out.println("Slot entered: " + slot);
+    }
+
+    // Reads slot input (1–9)
+    static int getUserSlot() {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a slot number (1-9): ");
+        int slot = sc.nextInt();
+
+        return slot;
+    }
+}
